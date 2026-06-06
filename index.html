@@ -137,7 +137,19 @@
 
     z-index: 9999;
 }
+.orbit-nav a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: 0.3s;
+    font-weight: 600;
+}
 
+.orbit-nav a:hover{
+    background: rgba(255,255,255,0.15);
+    color: var(--nebula-pink);
+}
 .nav-links{
     display:flex;
     list-style:none;
@@ -561,41 +573,30 @@ Footer */
 }
 
 
-@media (max-width:768px){
+@media screen and (max-width: 768px){
 
-    .orbit-nav{
-        padding:12px 15px;
-        border-radius:20px;
-        overflow-x:auto;
-        justify-content:flex-start;
-        gap:20px;
-
-        /* Hide scrollbar */
-        scrollbar-width:none;
+    body{
+        padding: 10px;
     }
 
-    .orbit-nav::-webkit-scrollbar{
-        display:none;
+    .orbit-nav{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 12px;
+        border-radius: 18px;
+    }
+
+    .orbit-nav a{
+        font-size: 14px;
+        padding: 6px 12px;
     }
 
     .logo-3d{
-        font-size:1.2rem;
-        flex-shrink:0;
-    }
-
-    .nav-links{
-        flex-wrap:nowrap;
-        overflow-x:auto;
-        scrollbar-width:none;
-    }
-
-    .nav-links::-webkit-scrollbar{
-        display:none;
-    }
-
-    .theme-pill{
-        flex-shrink:0;
-        padding:8px 12px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 8px;
+        font-size: 1.5rem;
     }
 }
   </style>
