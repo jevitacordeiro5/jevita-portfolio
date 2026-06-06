@@ -520,6 +520,84 @@ Footer */
     body.light .particle {
       color: black;
     }
+
+    .certificate-list{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.certificate-item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 20px;
+    border-left: 4px solid var(--nebula-pink);
+    background: rgba(255,255,255,0.03);
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.certificate-item:hover{
+    transform: translateX(8px);
+    border-left-color: var(--electric-blue);
+}
+
+.cert-year{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--nebula-pink);
+    min-width: 55px;
+}
+
+.certificate-item h3{
+    margin-bottom: 4px;
+    font-size: 1.1rem;
+}
+
+.certificate-item p{
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+
+@media (max-width:768px){
+
+    .orbit-nav{
+        padding:12px 15px;
+        border-radius:20px;
+        overflow-x:auto;
+        justify-content:flex-start;
+        gap:20px;
+
+        /* Hide scrollbar */
+        scrollbar-width:none;
+    }
+
+    .orbit-nav::-webkit-scrollbar{
+        display:none;
+    }
+
+    .logo-3d{
+        font-size:1.2rem;
+        flex-shrink:0;
+    }
+
+    .nav-links{
+        flex-wrap:nowrap;
+        overflow-x:auto;
+        scrollbar-width:none;
+    }
+
+    .nav-links::-webkit-scrollbar{
+        display:none;
+    }
+
+    .theme-pill{
+        flex-shrink:0;
+        padding:8px 12px;
+    }
+}
   </style>
 </head>
 <body>
@@ -535,6 +613,7 @@ Footer */
       <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
       <a href="#contact">Contact</a>
     </div>
 
@@ -612,6 +691,9 @@ Footer */
         <span class="particle"><i class="fas fa-brain"></i> AI prompts</span>
       </div>
     </div>
+    
+    
+    
 
     <!-- projects floating -->
     <div class="fragment-card" id="projects">
@@ -623,6 +705,48 @@ Footer */
         <div class="float-card"><i class="fas fa-file-invoice"></i><h3>MIS Wizard</h3><p>VBA tool that cut 10h of manual work weekly.</p></div>
       </div>
     </div>
+
+   <!-- Certificates -->
+<div class="fragment-card" id="certificates">
+    <h2><i class="fas fa-award"></i> Certifications</h2>
+
+    <div class="certificate-list">
+
+        <div class="certificate-item">
+            <span class="cert-year">2026</span>
+            <div>
+                <h3>Cloud Computing</h3>
+                <p>NPTEL | Jan - Apr 2026</p>
+            </div>
+        </div>
+
+        <div class="certificate-item">
+            <span class="cert-year">2026</span>
+            <div>
+                <h3>Artificial Intelligence</h3>
+                <p>IBM | Feb 2026</p>
+            </div>
+        </div>
+
+        <div class="certificate-item">
+            <span class="cert-year">2026</span>
+            <div>
+                <h3>WordPress Workshop</h3>
+                <p>WordPress Campus Connect | Jan 2026</p>
+            </div>
+        </div>
+
+        <div class="certificate-item">
+            <span class="cert-year">2026</span>
+            <div>
+                <h3>Cybersecurity & Digital Forensics Workshop</h3>
+                <p>TALFOR | May 2026</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+    
 
     <!-- contact cyber wave -->
     <div class="fragment-card" id="contact">
