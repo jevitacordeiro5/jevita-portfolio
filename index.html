@@ -573,31 +573,150 @@ Footer */
 }
 
 
-@media screen and (max-width: 768px){
+/* ================= MOBILE ================= */
 
-    body{
-        padding: 10px;
-    }
+@media only screen and (max-width: 768px){
 
-    .orbit-nav{
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 8px;
-        padding: 12px;
-        border-radius: 18px;
-    }
+  body{
+    padding:10px;
+  }
 
-    .orbit-nav a{
-        font-size: 14px;
-        padding: 6px 12px;
-    }
+  .container{
+    width:100%;
+  }
 
-    .logo-3d{
-        width: 100%;
-        text-align: center;
-        margin-bottom: 8px;
-        font-size: 1.5rem;
-    }
+  /* Navbar */
+  .orbit-nav{
+    padding:12px;
+    border-radius:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:8px;
+  }
+
+  .logo-3d{
+    width:100%;
+    text-align:center;
+    font-size:1.5rem;
+    margin-bottom:8px;
+  }
+
+  .nav-links{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:8px;
+  }
+
+  .nav-links a{
+    font-size:13px;
+    padding:6px 10px;
+  }
+
+  /* Hero */
+
+  .holo-hero{
+    grid-template-columns:1fr;
+    padding:20px;
+    text-align:center;
+  }
+
+  .hero-left{
+    align-items:center;
+  }
+
+  .name-badge{
+    font-size:3rem;
+  }
+
+  .glitch-text{
+    font-size:1.3rem;
+  }
+
+  .photo-sphere{
+    width:220px;
+    height:220px;
+    margin:20px auto 0;
+  }
+
+  /* Stats */
+
+  .hero-stats-3d{
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+  }
+
+  .stat-block{
+    width:90px;
+    padding:10px;
+  }
+
+  .stat-number{
+    font-size:1.8rem;
+  }
+
+  /* Section cards */
+
+  .fragment-card{
+    padding:20px;
+    border-radius:25px;
+  }
+
+  h2{
+    font-size:2rem;
+    padding-left:15px;
+  }
+
+  /* Education / Experience */
+
+  .brutal-grid{
+    grid-template-columns:1fr;
+  }
+
+  .brutal-item{
+    transform:none !important;
+    box-shadow:none;
+  }
+
+  /* Projects */
+
+  .float-projects{
+    grid-template-columns:1fr;
+  }
+
+  .float-card{
+    transform:none;
+  }
+
+  /* Skills */
+
+  .particle{
+    width:100%;
+    justify-content:center;
+  }
+
+  /* Contact */
+
+  .cyber-wave{
+    flex-direction:column;
+  }
+
+  .social-panel{
+    width:100%;
+    justify-content:center;
+  }
+
+  .social-panel a{
+    width:100%;
+    justify-content:center;
+  }
+
+  .resume-neon{
+    width:100%;
+    justify-content:center;
+  }
+
 }
   </style>
 </head>
